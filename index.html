@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+    <title>(U+F1E7 U+!F!F9) Bhutan shop<?title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family:  'segoe UI'
+Tahoma, Geneva, Verdana, Sans-serif;
+            background-color: #F5F1E8;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color:  #D71920;
+            color: white;
+            padding:  15px 20px
+            display:  flex;
+            justify-content:  space-between;
+            align-items: center;
+            box-shadow: 0  2px 5px
+rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            font-size: 24px;
+            display:  flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .header-icons {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /*LOCTION BAR */
+        .loction-bar {
+            background-color: #fff;
+            padding: flex;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        /* BANNER */
+        .banner {
+            background:
+linear-gradient(135deg, #D71920, #FFD700);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /*CATERGORIES */
+        .categories {
+            padding: 20px;
+            display:grid;
+            grid-temlate-colums:
+repeat(3, 1fr);
+            gap: 15px;
+        }  
+
+        .category-card {
+            background: white;
+            padding: 20px;
+            border-radius: center;
+            cursor: pointer;
+            box-shadow: 0 2px 5px
+rgba(0,0,0,0.1);
+               transition: transform 0.3s;
+        }
+
+        .category-card: hover {
+            transform: transform 0.3s;
+        }
+
+        .category-card:hover {
+            transform: translate(-5px);
+            box- shadow: 0 5px 15px
+rgba(0,0,0,0.2);          
+        }
+
+        .category-icon {
+            font-icon: 40px;
+            margin-bottom: 10px;
+        }
+
+        .category-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .products-grid {
+            display: grid
+            grid-template-colums:
+repeat(2, 1fr);
+           gap: 15px;
+           padding: 0 20px 20px 20px;
+        }
+
+        product-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow:hidden;
+            box-shadow: 0 2px 5px
+rgba(0,0,0,0.1);
+              transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px)
+            box-shadow: 0 5px 15px
+rgba(0,0,0,0.2);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 150px;
+            background:
+linear-gradient(135deg, #2D5016, #FFD700);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .product-info {
+            padding: 15px
+        }
+
+        .product-name {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .product-price {
+            color: #D71920;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 8px
+        }
+
+        .product-rating {
+            color: #FFD700
+            margin-bottom: 10px;
+            font- size: 14px;
+        }
+        
+        .add-to-cart-btn {
+            width: 100%
+            backgroung_color: #D71920;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color
+0.3s;
+        }
+
+        .add-to-cart-btn:hover {
+            backgroung-color: #A01518;
+        }
+
+        /* BOTTOM NAVIGATION */ {
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            border-top: 1px solid #ddd;
+            padding: 15px 0;
+            position: 100%;
+            box-shadow: 0 -2px 5px
+rgba(0,0,0,0.1)
+        }
+
+        nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .nav-icon {
+            font-size: 25px;
+        }
+
+        /* MAIN CONTENT SPACING */
+        main {
+            padding-bottom: 80px;
+        }
+
+        *
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .product-grid {
+                grid-temlate-colums: 1fr;
+            }
+            
+            category {
+                grid-temlate-colums:
+repeat(2, 1fr):
+            }
+        }
+        </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <h1> Bhutan shop</h1>
+        <div class="header-icons"
+             <span title="search"> </span>
+             <span title="search"> </span>
+             <span title="Account"> </span>
+             <sapn title="> <span
+id= "cart-count">0</span></span>
+         </div>
+         </header>
+
+         <!--LOCTION BAR -->
+         <div class="loction-bar">
+                Thimpu,Bhutan <span
+style="margin-left: auto; cursor:
+pointer;"> </span>
+   </div>
+
+   <!--MAIN CONTENT -->
+   <main>
+       <1--BANNER -->
+       <div class="banner">
+              special offer! 50% OFF Local
+Crafts!
+        </div>
+
+        <!-- CATERGORIES -->
+        <div class="categories">
+             div class="category-card">
+                 <div class="category-icon">
+</div>
+                 <div
+class="category-name">Groceries</div>
+            </div>
+            <div class="category-card">
+                <div> class="category-icon">
+</div>
+                <div
+class="category-name">Groceries</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+</div>
+                <div
+class="category-name">Clothing</div>
+            </div>
+            </div class="category-icon">
+</div>
+            </div
+class="category-name".Crafts</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+</div
+                <div
+class="category-name">Electronics</div
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+</div>
+            <div
+class="category-name">Books</div>
+            </div>
+            <div class="category-card">
+                <div class="category-icon">
+<?div>
+            <div
+class="category-name"Food</div>
+            </div>
+        </div>
+
+        <!--FEATURED PRODUCTS -->
+        <div class="section-title".
+        Featured Products</div>
+                <div class="products_grid">
+                    <div class="product-card">
+                        <div class="product-image">
+</div>
+                        <div class="product-info">
+                            <div
+class="product-name">Organic Rice</div>
+                    <div
+class="product-price">Nu. 450</div>
+                     <div
+class="product-rating">(124)</
+div>
+                      <button
+class="add-to-cart-btn"
+onclick="addToCart('Organic Rice',
+450)">Add to Cart</button>
+                 </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+<div>
+                <div class="product-info">
+                    <div
+class="product-name">Handwoven Gho</div>
+                    <div
+class="product-price">Nu. 1,200</div
+                     <div
+class="product-rating"> (89)</div>
+                    <button
+class="add-to-Cart-btn"
+onclick="addToCart('Handwoven Gho',
+1200)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- TRENDING TODAY -->
+        <div class="section-title">
+Trending Today</div>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+</div>
+                <div class="products-info">
+                    <div
+class="product-name">Ema Datshi Mix</div>
+                    <div
+class="product-price">Nu. 180</div>
+                     <div
+class="product-rating"> (256)</
+div>
+                    <button
+class="add-to-Cart-btn"
+onclick="addToCart('Ema Datshi Mix',
+180)">Add to Cart</button>
+                 </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+</div
+                <div class="prouct-info">
+                    <div
+ class="product-name">Thangka Art</div>
+                    <div
+ class="product-price"Nu. 2,500</div>
+                    <div
+ class="product-rating"(42)</
+ div>
+                    <button
+ class="add-to-cart-btn"
+ onclick=">Add to Cart</button>
+                   </div>
+                </div>
+            </div>
+
+            <-- GNH PRODUCTS -->
+            <div class=section-title"> GNH
+ Products (Eco-Friendly)</div>
+         <div class="products-grid">
+             <div class="product-card">
+                 <div class="product-image>
+ </div>
+                 div class="product-info">
+                    <div
+ class="product-name">Bamboo Set</div>
+                     <div
+ class="product-price">Nu. 350</div>
+                      <div
+ class="product-rating"> (178)</
+ div>
+                     <button
+ class="add-to-cart-btn"
+ onclick=" addToCart(Bamboo set', 350)">Add
+ to Cart</button>
+                 </div>
+              </div>
+
+              <div class="product-card">
+                  <div class="product-image">
+ </div>
+                  <div class="product-info">
+                     <div
+ class="product-name">Organic tea</div>
+                     <div
+ class="product-price">Nu.280</div>
+                      <div
+ class="product-rating"> (95)</div>
+                     <button
+ class="add-to-Cart-btn"
+ onclick="addToCart('offer Tea', 280)">Add
+ to Cart</button>
+                 </div>
+            </div>
+        </div>
+
+ </main>
+
+ <!-- BOTTOM NAVIGATION -->
+ <div class="bottom-nav">
+     <div class="nav-item">
+         <div class="nav-icon"> </div>
+         <div>Home</div>
+     </div>
+     <div class="nav-item">
+         <div class="nav-icon"> </div>
+         <div>Browse</div>
+     </div>
+     <div class="nav-item"> </div>
+         <div class="nav-icon"> </div>
+         <div>saved</div>
+     </div>
+     <div class="nav-item">
+         <div class="nav-icon"> </div>
+         <div>Orders</div>
+     </div>
+     <div class="nav-item">
+         <div class="nav-icon"> <div>
+         <div>Profile</div>
+     </div>
+ </div>
+
+ <-- JAVASCRIPT -->
+ <script>
+     let cartcount = 0;
+     lat cartitems = [];
+
+     function addToCart(productName'
+price) {
+         cartcount++;
+         cartItems.push({
+            name: productName,
+            price: price
+         });
+         document.getElementB
+ yId('cart-count').textContent =
+ cartCount;
+             alert(' ${productName} added
+ to cart!\n\nTotal items: ${cartCount}',
+ cartItems);
+         }
+     </script>
+ </bady>
+ </htmkl>
+        
+
+
+
+
+
+
+
+
+
+      
