@@ -177,8 +177,29 @@
         <div class="product-price">Nu. 220</div>
         <div class="product-rating"> (95)</div>
         <button class='add-to-cart-btn"Add to cart</button>
+    </div>
+</div>
 
-        }
+<div class="botton-nav">
+    <div class="nav-item> Home</div>
+    <div class="nav-item"> Favorites</div>
+    <dic class="nav-item"> cart</div>
+    <div class="nav-item"> Profile</div>
+</div>
+
+<script>
+   
+    const buttons= document.queryselectorALL('.add-to-cart-btn');
+    buttons.forEach(btn => {
+        btn.addEvenListener('Click', () => {
+            alert('Item added to cart!');
+        }};
+    }};
+</script>
+
+
+</body>
+</html>
         </style>
 </head>
 <body>
