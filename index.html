@@ -145,7 +145,7 @@
 <div
             
 <div class="section-title"> Trending Today</div>
-<div class="category-grid">           
+<div class="products-grid">           
     <div class="product-card">
         <div class="product-name">handwoven Gho</div>
         <div class="product-price"Nu.1,200</div>
@@ -194,6 +194,7 @@
     const buttons= document.queryselectorALL('.add-to-cart-btn');
     buttons.forEach(btn => {
         btn.addEvenListener('Click', () => {
+            const productName = btn.getAttribute('data-name');
             alert(' ${productName} added to cart!');
         }};
     }};
