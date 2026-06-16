@@ -65,6 +65,30 @@
         <diV class="product-price"Nu. 350</div>
         <buttom class="add-to-cart-btn" data-name="Bamboo Set">Add to cart</button>
     </div>
-         
+    <div class="product-card">
+        <div class="product-name">Organic Tea</div>
+        <div class='product-price">Nu. 220</div>
+        <button class="add-tp-cart-btn" data-name="Organic Tea">Add to cart</button>button>
+     </div>
+</div>
+
+<div class="bottom-nav">
+    <div>Home</div>
+    <div>Favorites</div>
+    <div>Profile</div>
+</div>
+
+<script>
+   let buttons= document.querySelectorAll('.add-to-cart-btn')
+   for(let i = 0; i < buttons.lenght; i++) {
+      buttons[i].addEventListenter('click, function(){
+         let name = this.getAttribute('data-name');
+         alert(name + 'added to cart');
+      });
+   }
+</script>
+
+</body>
+</html>
    
    
