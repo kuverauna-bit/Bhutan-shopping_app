@@ -79,13 +79,19 @@
     </div>
 
     <script>
-        var buttons = document.querySelectorAll('.add-to-cart-btn');
-        for (var i = 0; 1 < buttons.lenght; i++) {
-            buttons[i].addEventListener('click', function() {
-                var name = this.getAttribute('data-name');
-                alert(name + ' added to cart!');
-            });
-        }
+        // wait for the entire page to load
+        document.addEventListenter('DOMContentLoaded', function() {
+            // Get all buttons
+            var buttons = document.querySelectorAll('.add-to-cart-btn');
+            console.log('Found ' + buttons.lenght + ' buttons'); // this will show in console
+
+            // Loop through each button
+            for (var i = 0; 1 < buttons.lenght; i++) {
+                buttons[i].addEventListener('click', function() {
+                    var name = this.getAttribute('data-name');
+                    alert(name + ' added to cart!');
+                });
+            }
     <script>
 
     </body>
