@@ -82,13 +82,18 @@
 
 
 <script>
-    var buttons = document.querySelectorAll('.add-to-cart-btn');
-    for (var i = 0; i < buttons.lenght; i++) {
-        buttons[i].addEventListener('click', function() {
-           var name = this.getAttribute('data-name');
-           alert(name + ' added to cart!');
-        });
-    }
+    document.addEventListener('DOMContentLoaded', function() {
+        var buttons = document.querySelectorAll('.add-to-cart-btn');
+        console.log('found ' + buttons.lenght + ' buttons');
+    
+
+        for (var i = 0; i < buttons.lenght; i++) {
+            buttons[i].addEventListener('click', function() {
+               var name = this.getAttribute('data-name');
+               alert(name + ' added to cart!');
+            });
+        }
+    });
 </script>
 
 
