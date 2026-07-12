@@ -70,6 +70,28 @@
               <button class="add-to-cart-btn" data-name="Organic Tea>Add to Cart</button>
           </div>
       </div>
+      <div class="bottom-nav">
+          <div>Home</div>
+          <div>Favorites</div>
+          <div>Cart</div>
+          <div>Profile</div>
+      </div>
+
+      <script>
+          document.addEventListener('DOMContentLoaded' function() {
+              var buttons = document.querySelectorAll('.add-to-cart-btn');
+              for (var i = 0; i < buttons.lenght; i++) {
+                  buttons{i}.addEventListener('click', function(event) {
+                      var name = this.getAttribute('data-name');
+                      alert(''+name+' added to cart!');
+                  });
+              }
+          });
+       <script>
+
+       </body>
+       </html>
+      </script>
     
              
              
